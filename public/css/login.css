@@ -54,7 +54,7 @@ div#main form label {
     line-height: 27px;
     margin: 0 14px 0 auto;
     text-align: right;
-    width: 72px;
+    width: auto;
 }
 #main a.register_here:hover {
     color: #0C8007;
@@ -81,6 +81,10 @@ input.text {
     padding-left: 5px;
     width: 275px;
 }
+.success {
+    text-align: center;
+    color: green;
+}
 input.submit {
     background-color: white;
     border: 1px solid black;
@@ -89,11 +93,13 @@ input.submit {
     font-size: 18px;
     font-weight: bold;
     height: 37px;
-    margin-left: 145px;
+    margin-left: auto;
     margin-top: 35px;
     margin-bottom: 15px;
-    width: 100px;
+    /*! width: 100px; */
     display: block;
+    padding: 0 26px;
+    margin-right: auto;
 }
 input.submit:hover {
     border-color: #FF7F27;
