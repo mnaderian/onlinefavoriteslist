@@ -28,9 +28,9 @@
                 <label>URL: </label>
                 <input type="text" name="url" class="text" />
                 <select name="addsite_cat" id="addsite_cat">
-                    {{-- TODO: get all user's categories --}}
-                    <option value="1">Main</option>
-                    <option value="20">Development</option>
+                    @foreach($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
                 </select>
                 <input type="submit" name="add" value="Add" class="submit" />
             </form>
@@ -58,8 +58,9 @@
         <select name="list_cats">
             {{-- TODO: get all user's categories --}}
             <option value="all">All</option>
-            <option value="1">Main</option>
-            <option value="20">Development</option>
+            @foreach($categories as $category)
+              <option value="{{ $category->id }}">{{ $category->name }}</option>
+            @endforeach
         </select>
         <input type="submit" value="Load" />
     </form>
