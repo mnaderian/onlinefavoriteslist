@@ -46,7 +46,6 @@
         <a href="#">Categories</a>
         <a href="#">Trash</a>
     </div>
-
     <div id="number_of_favorites">
         <i>Number of favorites: </i>
         {{-- TODO: get user's favorites count --}}
