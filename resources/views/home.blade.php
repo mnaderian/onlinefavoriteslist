@@ -24,7 +24,8 @@
         <legend>Add Site</legend>
         <div id="addform">
             {{-- TODO: update form post action url --}}
-            <form method="post" action="#">
+            <form method="post" action="/add">
+              @csrf
                 <label>URL: </label>
                 <input type="text" name="url" class="text" />
                 <select name="addsite_cat" id="addsite_cat">
