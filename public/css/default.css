@@ -41,7 +41,7 @@ fieldset {
     margin: 0 auto 25px;
     width: 799px;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 fieldset#addsite {
     background-color: #C7E8E8;
